@@ -21,6 +21,9 @@ source.exclude_exts = spec
 # (list) List of directory to exclude (let it empty to exclude all files)
 source.exclude_dirs = bin, venv, .git, .github
 
+# (str) Application versioning
+version = 1.0
+
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
 requirements = python3,kivy
