@@ -9,6 +9,9 @@ package.name = kinderschubser
 # (str) Package domain (needed for android packaging)
 package.domain = org.test
 
+# (str) Source directory where the main.py file resides
+source.dir = .
+
 # (list) Source files to include (let it empty to include all files)
 source.include_exts = py,png,jpg,kv,atlas
 
@@ -17,12 +20,6 @@ source.exclude_exts = spec
 
 # (list) List of directory to exclude (let it empty to exclude all files)
 source.exclude_dirs = bin, venv, .git, .github
-
-# (list) List of extensions to include (let it empty to include all files)
-source.include_patterns = assets/*, images/*
-
-# (str) Application versioning (method 1)
-version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
@@ -34,9 +31,6 @@ orientation = portrait
 # (bool) Indicate if the application should be fullscreen or not
 fullscreen = 0
 
-# (string) Presplash background color
-# android.presplash_color = #121212
-
 # (list) Permissions
 android.permissions = INTERNET
 
@@ -45,12 +39,6 @@ android.api = 33
 
 # (int) Minimum API your APK will support.
 android.minapi = 21
-
-# (str) Android SDK version to use
-# android.sdk = 20
-
-# (str) Android NDK version to use
-# android.ndk = 25b
 
 # (bool) Use --private data storage (True) or --public storage (False)
 android.private_storage = True
