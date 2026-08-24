@@ -25,7 +25,6 @@ source.exclude_dirs = bin, venv, .git, .github
 version = 1.0
 
 # (list) Application requirements
-# comma separated e.g. requirements = sqlite3,kivy
 requirements = python3,kivy
 
 # (str) Supported orientations
@@ -38,10 +37,13 @@ fullscreen = 0
 android.permissions = INTERNET
 
 # (int) Target Android API, should be as high as possible.
-android.api = 33
+android.api = 31
 
 # (int) Minimum API your APK will support.
 android.minapi = 21
+
+# (str) Android sdk accept license
+android.accept_sdk_license = True
 
 # (bool) Use --private data storage (True) or --public storage (False)
 android.private_storage = True
